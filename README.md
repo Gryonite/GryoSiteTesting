@@ -3,4 +3,4 @@ This Is To Make Changes To The Website Before The Actual Website Gets Updated. Y
 
 ### NOTE: If you do end up using this as a website template, make sure to switch to the stable branch and start from there
 
-### This branch website was made with the vscodium source code but will be changed in the future
+### This branch website is the stable version
