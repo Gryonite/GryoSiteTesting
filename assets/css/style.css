@@ -1,1 +1,237 @@
+/* General */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #1e1e1e;
+    color: #cccccc;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Navigation */
+
+.navbar {
+    width: 100%;
+    background: #181818;
+    border-bottom: 1px solid #333333;
+}
+
+.navbar-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 18px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand-name {
+    font-size: 23px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 30px;
+}
+
+.navbar-links a {
+    color: #cccccc;
+    font-size: 14px;
+    transition: color 0.2s;
+}
+
+.navbar-links a:hover {
+    color: #ffffff;
+}
+
+/* Hero */
+
+.hero {
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 25px;
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.hero h1 {
+    color: #ffffff;
+    font-size: 64px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.hero-subtitle {
+    font-size: 24px;
+    color: #cccccc;
+    margin-bottom: 20px;
+}
+
+.hero-description {
+    font-size: 17px;
+    color: #999999;
+    margin-bottom: 35px;
+}
+
+/* Buttons */
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.button {
+    display: inline-block;
+    padding: 11px 28px;
+    border-radius: 4px;
+    font-size: 15px;
+    transition: background 0.2s;
+}
+
+.button-primary {
+    background: #007acc;
+    color: white;
+}
+
+.button-primary:hover {
+    background: #0062a3;
+}
+
+.button-secondary {
+    background: #333333;
+    color: white;
+    border: 1px solid #555555;
+}
+
+.button-secondary:hover {
+    background: #444444;
+}
+
+/* Features */
+
+.features {
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px 30px 100px;
+    text-align: center;
+}
+
+.features h2 {
+    color: white;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.feature {
+    padding: 30px 20px;
+    background: #252526;
+    border: 1px solid #333333;
+    border-radius: 5px;
+}
+
+.feature h3 {
+    color: white;
+    margin-bottom: 12px;
+}
+
+.feature p {
+    color: #999999;
+    font-size: 14px;
+}
+
+/* Footer */
+
+.footer {
+    background: #181818;
+    border-top: 1px solid #333333;
+    padding: 40px 30px 20px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-brand p {
+    color: #999999;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 25px;
+    margin: 25px 0;
+}
+
+.footer-links a {
+    color: #999999;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    border-top: 1px solid #333333;
+    padding-top: 20px;
+    color: #777777;
+    font-size: 13px;
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .navbar-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 46px;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+    }
+
+    .hero-buttons {
+        flex-wrap: wrap;
+    }
+}
