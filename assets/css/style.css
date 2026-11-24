@@ -254,4 +254,11 @@ a {
     .hero-buttons {
         flex-wrap: wrap;
     }
+
+   .hero-logo {
+    display: block;
+    width: 140px;
+    height: auto;
+    margin: 0 auto 20px auto;
+    object-fit: contain;
 }
