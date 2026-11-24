@@ -1,1 +1,7 @@
+title: Gryonite
+description: The Offical Gryonite Website
 
+markdown: kramdown
+
+plugins:
+  - jekyll-relative-links
